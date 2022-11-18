@@ -45,7 +45,7 @@ def get_fruit_load_list():
       my_cur.execute("SELECT * FROM fruit_load_list")
       my_data_rows = my_cur.fetchall() #fetchone()
 
-if steamlit.button('Get Fruit Load List')
+if steamlit.button('Get Fruit Load List'):
    my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
    streamlit.dataframe(my_data_rows)
 
